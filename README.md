@@ -1,0 +1,1 @@
+# rails_arb_file_write_bootsnap
