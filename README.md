@@ -20,7 +20,6 @@ gem install httparty
 
 ## Running the exploit
 
-First install required gem HTTParty: 
 ```
 ruby xpl.rb
 ```
