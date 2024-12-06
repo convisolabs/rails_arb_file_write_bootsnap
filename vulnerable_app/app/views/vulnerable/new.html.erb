@@ -1,0 +1,20 @@
+<h1>File Upload</h1>
+
+<%= form_with url: upload_path, method: :post, multipart: true, local: true do |form| %>
+  <div>
+    <%= form.label :file, "Choose a file to upload:" %>
+    <%= form.file_field :file, required: true %>
+  </div>
+
+  <div>
+    <%= form.label :filename, "Optional custom filename:" %>
+    <%= form.text_field :filename, placeholder: "Leave blank to use the original filename" %>
+  </div>
+
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+  <div>
+    <%= form.submit "Upload File" %>
+  </div>
+<% end %>
+

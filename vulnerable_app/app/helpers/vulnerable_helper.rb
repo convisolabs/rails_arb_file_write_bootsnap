@@ -1,0 +1,2 @@
+module VulnerableHelper
+end
