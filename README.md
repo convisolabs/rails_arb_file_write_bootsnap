@@ -12,8 +12,15 @@ docker build -t my-app .
 docker run --rm -p 3000:3000 --name my-app -e RAILS_MASTER_KEY=<value from config/master.key> my-app
 ```
 
+## Installing required gem for the exploits (HTTParty)
+
+```
+gem install httparty
+```
+
 ## Running the exploit
 
+First install required gem HTTParty: 
 ```
 ruby xpl.rb
 ```
