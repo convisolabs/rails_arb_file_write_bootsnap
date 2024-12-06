@@ -9,7 +9,7 @@ You can read the details in this blogpost here.
 ```
 cd vulnerable_app
 docker build -t my-app .
-docker run --rm -p 3000:3000 --name my-app -e RAILS_MASTER_KEY=<value from config/master.key> my-app
+docker run --rm -p 3000:3000 --name my-app -e RAILS_MASTER_KEY=50584fc86b1efe7e0760f2b28f31744b my-app
 ```
 
 ## Installing required gem for the exploits (HTTParty)
